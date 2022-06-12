@@ -1,6 +1,8 @@
 <app-header text="Lists">
   <div class="dropdown" style="float: right">
-    <button routerLink="/create-list" class="btn-confirm" type="submit">Create List</button>
+    <button routerLink="/create-list" class="btn-confirm" type="submit">
+      Create List
+    </button>
     <!-- <button class="dropbtn">Right</button> -->
     <!-- <button class="dropbtn" type="button" class="btn-sidebar">
       <i class="fa fa-bars" aria-hidden="true"> </i>
@@ -11,7 +13,14 @@
   </div>
 </app-header>
 
-<table>
+<div
+  *ngIf="lists.length === 0"
+  style="text-align: center; width: 100%; margin-top: 20px"
+>
+  No lists found. Create some lists.
+</div>
+
+<table *ngIf="lists.length > 0">
   <tr>
     <th>ID</th>
     <th>List Name</th>

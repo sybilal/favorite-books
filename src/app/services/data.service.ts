@@ -20,6 +20,7 @@ export class DataService {
   }
 
   private lists: BookList[] = [
+    /*
     {
       id: 1,
       listName: 'Fiction',
@@ -41,6 +42,7 @@ export class DataService {
       listName: 'Self-help',
       books: [],
     },
+    */
   ];
 
   private availableBooks: Book[] = [

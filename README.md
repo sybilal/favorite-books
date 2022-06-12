@@ -1,26 +1,45 @@
-# FavoriteBooks
+# Favorite Books
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+## [Live Demo](https://sybilal.github.io/favorite-books/)
 
-## Development server
+## Project Setup for Mac
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Step 1 - Install Homebrew
 
-## Code scaffolding
+You must need to install [Homebrew package manager](https://tecadmin.net/install-homebrew-macos/) on your macOS.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Step 2 - Install Node
 
-## Build
+Run the following command to install Node.js
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`brew update`
+`brew install node`
 
-## Running unit tests
+After that, view Node,js version info
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`node -v`
 
-## Running end-to-end tests
+### Step 3 - Install Angular/CLI on macOS
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`npm install -g @angular/cli`
+
+### Step 4 - Clone Repository
+
+`git clone https://github.com/sybilal/favorite-books.git`
+
+### Step 5 - Run Development Server
+
+Navigate to the project's directory.
+
+Run `npm install`
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+### Step 6 - Build For Production
+
+`ng build --prod`
+
+This, by default, writes output to a folder named dist/ in the current project.
 
 ## Further help
 
