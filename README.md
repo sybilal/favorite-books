@@ -37,7 +37,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ### Step 6 - Build For Production
 
-`ng build --prod`
+`ng build`
 
 This, by default, writes output to a folder named dist/ in the current project.
 
