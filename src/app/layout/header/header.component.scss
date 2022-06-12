@@ -1,0 +1,12 @@
+@import "/src/app/my-mixin.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+
+  // color: $secondaryColor;
+  padding-left: 20px;
+  padding: 0 20px;
+}

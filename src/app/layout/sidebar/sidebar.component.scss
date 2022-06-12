@@ -1,0 +1,32 @@
+@import "/src/app/my-mixin.scss";
+
+.sidebar-wrapper {
+  position: fixed;
+  z-index: 1;
+  width: 250px;
+  overflow: auto;
+  background-color: $primaryColor;
+  height: 100%;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    // padding-bottom: 20px;
+    // padding-top: 20px;
+
+    .btn-sidebar {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: red;
+    }
+
+    .btn-sidebar:hover {
+      background-color: #ffffff38;
+    }
+  }
+}
