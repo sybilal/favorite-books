@@ -30,8 +30,6 @@ export class ListDetailsComponent implements OnInit {
 
     this.listData = this.dataService.getListById(this.id);
     this.availableBooks = this.dataService.getAvailableBooks();
-
-    console.log();
   }
 
   deleteBook(id: number) {

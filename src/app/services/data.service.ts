@@ -7,43 +7,14 @@ import { BookList } from '../models/list-model';
   providedIn: 'root'
 })
 export class DataService {
-
-
-  constructor(private toastrService: ToastrService
-  ) {
-
+  constructor(private toastrService: ToastrService) {
   }
-
 
   get seq() {
     return this.lists.length + 1;
   }
 
-  private lists: BookList[] = [
-    /*
-    {
-      id: 1,
-      listName: 'Fiction',
-      books: [{
-        id: 3,
-        title: '1984',
-        year: 1949,
-        author: 'George Orwell',
-        imgUrl: 'assets/1984.jpg'
-      },],
-    },
-    {
-      id: 2,
-      listName: 'Non-fiction',
-      books: [],
-    },
-    {
-      id: 3,
-      listName: 'Self-help',
-      books: [],
-    },
-    */
-  ];
+  private lists: BookList[] = [];
 
   private availableBooks: Book[] = [
     {
@@ -88,8 +59,6 @@ export class DataService {
   }
 
   deleteBookFromList(listId: number, bookId: number) {
-    // const list: BookList = this.getListById(listId);
-    // const book: Book = this.getBookById(bookId);
     const listIndex = this.lists.findIndex(e => e.id == listId);
     const bookName = this.lists[listIndex].books.find(e => e.id == bookId)?.title;
     this.lists[listIndex].books = this.lists[listIndex].books.filter(e => e.id != bookId);
@@ -125,11 +94,9 @@ export class DataService {
   }
 
   addBookToList(listId: number, bookId: number) {
-    console.log({ listId, bookId })
 
     const list: BookList = this.getListById(listId);
     const book: Book = this.getBookById(bookId);
-    console.log({ list, book })
 
     if (list.books.find(e => e.id == bookId)) {
       this.toastrService.error(`${book.title} already added`);

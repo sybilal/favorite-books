@@ -36,10 +36,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     BrowserAnimationsModule,
     ToastrModule.forRoot(
       {
-        // timeOut: 10000,
-        // closeButton: true,
         positionClass: 'toast-bottom-right',
-        // preventDuplicates: true,
       },
     ),
     DragDropModule

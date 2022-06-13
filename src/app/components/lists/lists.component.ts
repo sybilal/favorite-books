@@ -7,7 +7,7 @@ import { DataService } from 'src/app/services/data.service';
   templateUrl: './lists.component.html',
   styleUrls: ['./lists.component.scss']
 })
-export class ListsComponent implements OnInit {
+export class ListsComponent {
 
   constructor(private dataService: DataService) { }
 
@@ -23,10 +23,6 @@ export class ListsComponent implements OnInit {
   deleteList(id: number, e: Event) {
     this.dataService.deleteList(id);
     e.stopPropagation();
-  }
-
-  ngOnInit(): void {
-    console.log();
   }
 
 }
