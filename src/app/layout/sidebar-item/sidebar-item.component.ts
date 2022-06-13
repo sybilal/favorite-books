@@ -5,13 +5,9 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './sidebar-item.component.html',
   styleUrls: ['./sidebar-item.component.scss']
 })
-export class SidebarItemComponent implements OnInit {
+export class SidebarItemComponent {
   @Input() name?: string;
   @Input() faicon?: string;
   @Input() route?: string;
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
