@@ -26,6 +26,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('favorite-books app is running!');
+    expect(compiled.querySelector('div h4')?.textContent).toContain('Favorite Books');
   });
 });

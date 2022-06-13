@@ -8,7 +8,7 @@ import { DataService } from 'src/app/services/data.service';
   templateUrl: './create-list.component.html',
   styleUrls: ['./create-list.component.scss']
 })
-export class CreateListComponent implements OnInit {
+export class CreateListComponent {
 
   constructor(
     private fb: FormBuilder,
@@ -21,10 +21,6 @@ export class CreateListComponent implements OnInit {
   });
 
   submitted = false;
-
-  ngOnInit(): void {
-    console.log();
-  }
 
   get f() {
     return this.listForm.controls;

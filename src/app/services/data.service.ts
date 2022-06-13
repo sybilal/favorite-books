@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { Book } from '../models/book-model';
-import { BookList } from '../models/list-model';
+import { Book } from 'src/app/models/book-model';
+import { BookList } from 'src/app/models/list-model';
 
 @Injectable({
   providedIn: 'root'
